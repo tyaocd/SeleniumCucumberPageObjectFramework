@@ -1,0 +1,104 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4037149057,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EnvConfiguration.StartUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "try before",
+        "description": "",
+        "id": "try-search-function-in-baidu-homepage;try-before",
+        "after": [
+          {
+            "result": {
+              "duration": 633415024,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EnvConfiguration.CleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1872946370,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "open baidu home page",
+            "match": {
+              "location": "TryBaidu.open_baidu_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97453267,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "input \"test\" in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test\"",
+                  "offset": 6
+                }
+              ],
+              "location": "TryBaidu.input_in_search_box(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 267791044,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click the search button",
+            "match": {
+              "location": "TryBaidu.i_click_the_search_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "try search function in Baidu Homepage",
+    "description": "  I want to use this feature to test baidu\u0027s search function",
+    "id": "try-search-function-in-baidu-homepage",
+    "keyword": "Feature",
+    "uri": "src/test/java/TestCases/baidu.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
